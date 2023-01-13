@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
+
+<script>
+  // mine
+  let now = new Date();
+
+  let date = now.getDate();
+  console.log(now.getDate());
+  let millisec = now.getMilliseconds();
+  console.log(now.getMilliseconds());
+  let year = now.getFullYear();
+  console.log(now.getFullYear());
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let months = [
+    "Jan",
+    "Feb",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  let day = days[now.getDay()];
+  let month = months[now.getMonth()];
+  alert = "${day} ,${month} ${date},${year}";
+  console.log(now.getDay());
+
+  // theirs
+
+  let currentTime = new Date();
+
+  // Challenge 1
+  console.log(currentTime);
+
+  // Challenge 2
+  console.log(currentTime.getMilliseconds());
+
+  // Challenge 3
+  console.log(currentTime.getDay());
+
+  // Challenge 4
+  console.log(currentTime.getFullYear());
+
+  // Challenge 5
+  console.log(currentTime.getMonth());
+
+  // Challenge 6
+
+  // Challenge 7
+  function formatDate(date) {
+    let days = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+    ];
+
+    let months = [
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+
+    let currentYear = date.getFullYear();
+    let currentDay = days[date.getDay()];
+    let currentMonth = months[date.getMonth()];
+    let currentDate = date.getDate();
+
+    let formattedDate = `Today is ${currentDay}, ${currentMonth} ${currentDate}, ${currentYear}`;
+
+    return formattedDate;
+  }
+
+  console.log(formatDate(currentTime));
+</script>

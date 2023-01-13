@@ -1,55 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Naja Hawthorne</title>
+    <title>Naja Y Hawthorne</title>
     <!-- CSS -->
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="favicon/favicon (1).ico" />
-  </head>
-  <body>
+    <!--Font Awsome-->
+    <script src="https://kit.fontawesome.com/361c3f3043.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
     <!-- navigation -->
     <div class="navbar">
-      <div class="container">
-        <div class="logo"><h4>Naja Hawthorne</h4></div>
+        <div class="container">
+            <div class="logo">
+                <h4>Naja Hawthorne</h4>
+            </div>
 
-        <ul class="nav">
-          <li><a href="#" target="_blank">About</a></li>
-          <li><a href="#" target="_blank">Portfolio</a></li>
-          <li><a href="#" target="_blank">Contact</a></li>
-        </ul>
-      </div>
+            <ul class="nav">
+                <li><a class="active" href="_blank" target="_blank"> Home </a></li>
+                <li><a href="#" target="_blank">About</a></li>
+                <li><a href="#" target="_blank">Portfolio</a></li>
+                <li><a href="#" target="_blank">Contact</a></li>
+            </ul>
+        </div>
     </div>
 
+
+    <!--header section -->
     <header class="header">
-      <div class="container">
-        <div>
-          <h1>H, my name is Naja!</h1>
-          <p>I am a frontend developer from Nashville.</p>
+        <div class="header-container">
+            <div>
+                <h1>Hi, my name is Naja!</h1>
+                <p>I'm a frontend developer from Nashville. I'm the artist, the keyboard is my paintbush, code is my
+                    media and
+                    the screen is my canvas!</p>
+            </div>
+            <img src="img/girl_tech.svg" alt="city" />
         </div>
-        <img src="img/city.svg" alt="" />
-      </div>
     </header>
+
+
+
+    <!--Quote Section-->
+    <section class="quote">
+        <div class="quote-container">
+            <h2> <em> "Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellendus iure error quasi dignissimos minus fugiat voluptate dolore provident perferendis
+                    repudiandae,
+                    quod, quos, ut voluptatibus architecto voluptas nisi. Ex, in officiis." </em> </h2>
+            <span>
+                <p>- Sun tzu...maybe</p>
+            </span>
+        </div>
+    </section>
+
+
+
     <!--About section-->
     <section class="about">
-      <div class="container">
-        <div>
-          <h2>About me</h2>
-          <p>Front end web developer</p>
+        <div class="about-container">
+            <div>
+                <h1>About me</h1>
+                <p>I entered the tech field through an interest in debugging. I attended a boot camp called
+                    Careerist that taught QA automation. From there my interest grew from helping find the bugs for the
+                    developers
+                    to actually create the product that must go through rigorous testing before reaching an audience.
+
+
+                    After sometime, I attended a boot camp called <a
+                        href="https://www.shecodes.io/graduates/49981-naja-hawthorne" target="_blank">SheCode</a>
+                    specifically designed to introduce women like myself into the web development field. I currently
+                    still attend
+                    several of their courses while also
+                    diversifying my resources to ensure I stay a well rounded developer.
+                </p>
+            </div>
+            <img src="img/Naja.jpg" alt="picture of Naja Hawthorne" margin-right="300px">
         </div>
-      </div>
     </section>
 
-    <!-- Tool section-->
 
-    <section class="tools">
-      <div class="container">
-        <div class="tool">
-          <h2>Tools i use</h2>
+    <!-- Skill section-->
+
+    <section class="cards" style="height: 700px;">
+        <h1> skills</h1>
+        <div class="card-container">
+
+            <div class="card">
+                <img src="img/phone_mon.svg" alt="phone and monitor" class="icon">
+                <div class="des">
+                    <p> Front End</p>
+                    <hr>
+                    <ul>
+                        <li><img src="img/html2.png" alt="HTML logo" class="symbol"></p>
+                        </li>
+                        <li><img src="img/css2.png" alt="CSS3 logo" class="symbol"></li>
+                        <li><img src="img/javascript.png" alt="Javascript logo" class="symbol"></li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/backend.svg" alt="phone and monitor" class="icon">
+                <div class="des">
+                    <p> Tools</p>
+                    <hr>
+                    <ul>
+                        <li><img src="img/bootstrap.png" alt="Bootstrap logo" class="symbol"></li>
+                        <li>HTML</li>
+                        <li>Bootstrap</li>
+                        <li></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/design.svg" alt="phone and monitor" class="icon">
+                <div class="des">
+                    <p> Design</p>
+                    <hr>
+                    <ul>
+                        <li><img src="img/invison.png" alt="Invision logo" class="symbol"></li>
+                        <li>HTML</li>
+                        <li>Bootstrap</li>
+                        <li></li>
+
+                    </ul>
+                </div>
+            </div>
+
         </div>
-      </div>
+
+
     </section>
-  </body>
+    <!--Projects Section-->
+    <section class="projects">
+        <h1>Portfolio</h1>
+        <div class="project-container">
+
+            <div class="proj">
+                <img src="img/futurum.jpg">
+                <h3> Futurum- E commerce landing page</h3>
+                <div class="proj-detail">
+
+                    <p> Futurum is a my personal luxury E-commerce website landing page.
+                        The builing matieals required:</br>
+                        HTML | CSS | Javascript
+
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="proj">
+                <img src="img/weather.jpg">
+                <h3> Weather App</h3>
+                <div class="proj-detail">
+                    <p> The weather app is deisgned for The builing matieals required:</br>
+                        HTML | CSS | Javascript | Bootstrap </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--footer-->
+    <!--footer -->
+    <div class="footer">
+        <div class="footer-container">
+
+            <div class="footer-secton-links">
+                <h3> Connect with us</h3>
+                <a href="https://github.com/Tenseigaa" class="fa-brands fa-github"></a>
+                <a href="https://www.linkedin.com/in/najahawthorne/" class="fa-brands fa-linkedin"></a>
+            </div>
+
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3> Get in Touch</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="text" id="email" placeholder="Email@yahoo.com" required>
+                <input type="text" id="Phone" placeholder="Phone #" required>
+                <textarea type="message" rows="4" placeholder="How can I help you?"></textarea>
+                <button type="submit">Send</button>
+            </form>
+
+
+
+
+        </div>
+        <!-- <div class="footer-bottom">
+      Designed with love by Naja Hawthorne
+
+    </div> -->
+        </section>
+    </div>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "nhawtgorne@gmail.com",
+                Password: "password",
+                To: 'nhawtgorne@gmail.com',
+                From: document.getElementById("email").value,
+                Subject: "New Contact Form Enquiry",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+</body>
+</body>
+
+</html>
+
+<div class="proj">
+    <img src="img/weather.jpg">
+    <h3> Weather App</h3>
+    <div class="proj-detail">
+        <p> The weather app is deisgned for The builing matieals required:</br>
+            HTML | CSS | Javascript | Bootstrap </p>
+
+    </div>
+</div>
+</div>
+</section>
+<!--footer-->
+<!--footer -->
+<div class="footer">
+    <div class="footer-container">
+
+        <div class="footer-secton-links">
+            <h3> Connect with us</h3>
+            <a href="https://github.com/Tenseigaa" class="fa-brands fa-github"></a>
+            <a href="https://www.linkedin.com/in/najahawthorne/" class="fa-brands fa-linkedin"></a>
+        </div>
+
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <h3> Get in Touch</h3>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="text" id="email" placeholder="Email@yahoo.com" required>
+            <input type="text" id="Phone" placeholder="Phone #" required>
+            <textarea type="message" rows="4" placeholder="How can I help you?"></textarea>
+            <button type="submit">Send</button>
+        </form>
+
+
+
+
+    </div>
+    <!-- <div class="footer-bottom">
+      Designed with love by Naja Hawthorne
+
+    </div> -->
+    </section>
+</div>
+<script src=" https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail() {
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "nhawtgorne@gmail.com",
+            Password: "password",
+            To: 'nhawtgorne@gmail.com',
+            From: document.getElementById("email").value,
+            Subject: "New Contact Form Enquiry",
+            Body: "And this is the body"
+        }).then(
+            message => alert(message)
+        );
+    }
+</script>
+</body>
+</body>
+
 </html>
